@@ -1,0 +1,273 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 416,
+        "width": 604,
+        "designer|userClassName": "pnAddListMoneyWindows",
+        "designer|userAlias": "pnAddListMoneyWindows",
+        "layout": "border",
+        "title": "เพิ่มข้อมูลรับเงิน"
+    },
+    "designerId": "5a1d7163-796d-4fb1-9e0e-815b8784cf84",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "id": "pnAddListMoney",
+                "designer|userClassName": "pnAddListMoney",
+                "title": null
+            },
+            "designerId": "ebd27d31-4d0a-4d42-9208-9e2083b35438",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "margin": "10 10 10 10",
+                        "padding": 10,
+                        "designer|userClassName": "MyFieldSet",
+                        "title": ""
+                    },
+                    "designerId": "c64b9475-1af5-4766-9c22-4bb543fda34a",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "id",
+                                "designer|userClassName": "MyTextField1",
+                                "fieldLabel": "รหัส",
+                                "msgTarget": "side",
+                                "name": "id",
+                                "allowBlank": false,
+                                "vtype": "alphanum"
+                            },
+                            "designerId": "b314e7e4-3c8b-4b61-84b2-6ad5f57922e8"
+                        },
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "date",
+                                "designer|userClassName": "MyDateField",
+                                "fieldLabel": "วันที่โอน",
+                                "msgTarget": "side",
+                                "name": "date",
+                                "editable": false
+                            },
+                            "designerId": "368181a6-a167-465e-b81a-2388ff66b51a"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField1",
+                                "fieldLabel": "เวลา",
+                                "msgTarget": "side",
+                                "name": "time"
+                            },
+                            "designerId": "ed8af43c-336b-4363-bb46-dd5a3fcd7efa"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "depNo",
+                                "designer|userClassName": "MyTextField5",
+                                "fieldLabel": "หมายเลขรายการ",
+                                "msgTarget": "side",
+                                "name": "depNo",
+                                "vtype": "alphanum"
+                            },
+                            "designerId": "a6460241-838a-4259-9285-13ffbde6b2ea"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "withDrawal",
+                                "designer|userClassName": "MyTextField4",
+                                "fieldLabel": "จำนวนที่ถอน",
+                                "msgTarget": "side",
+                                "name": "withDrawal",
+                                "allowBlank": false,
+                                "vtype": "alphanum"
+                            },
+                            "designerId": "29bf4af9-c8da-40ad-8aae-7818a797ba83"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "deposit",
+                                "designer|userClassName": "MyTextField3",
+                                "fieldLabel": "จำนวนที่ฝาก",
+                                "msgTarget": "side",
+                                "name": "deposit",
+                                "allowBlank": false,
+                                "vtype": "alphanum"
+                            },
+                            "designerId": "c879113c-f0c7-48c3-a4a7-26fd5cbe87de"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "machNo",
+                                "designer|userClassName": "MyTextField2",
+                                "fieldLabel": "machNo",
+                                "msgTarget": "side",
+                                "name": "machNo",
+                                "vtype": "alphanum"
+                            },
+                            "designerId": "9cdbe468-0f15-4f84-ac47-c69dd93dc743"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "memberId",
+                                "designer|userClassName": "MyTextField2",
+                                "fieldLabel": "memberId",
+                                "msgTarget": "side",
+                                "name": "memberId",
+                                "vtype": "alphanum"
+                            },
+                            "designerId": "3e257439-45c3-487e-a3ba-e23afdcbc3ff"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "transactiionNo",
+                                "designer|userClassName": "MyTextField2",
+                                "fieldLabel": "transactionNo",
+                                "msgTarget": "side",
+                                "name": "transactiionNo",
+                                "vtype": "alphanum"
+                            },
+                            "designerId": "11998a3b-9499-424b-a697-07d21356fb0f"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "name",
+                                "designer|userClassName": "MyTextField1",
+                                "fieldLabel": "ชื่อสมาชิก",
+                                "msgTarget": "side",
+                                "name": "name",
+                                "vtype": "alpha"
+                            },
+                            "designerId": "befc0d42-467b-4c5a-a85a-3a1e4c5d37bc"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnSave",
+                        "itemId": "btnSave",
+                        "margin": "0 0 0 10",
+                        "width": 100,
+                        "designer|userClassName": "MyButton2",
+                        "text": "บันทึก"
+                    },
+                    "designerId": "601d22de-2f31-41e0-81fb-6150b893b767"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnClear",
+                        "margin": "0 0 0 10",
+                        "width": 100,
+                        "designer|userClassName": "MyButton2",
+                        "text": "ล้างข้อมูล"
+                    },
+                    "designerId": "79cbd7fa-8fa8-4dfb-ad6b-770ff783816a"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "btnEdit",
+                        "margin": "0 0 0 10",
+                        "width": 100,
+                        "designer|userClassName": "MyButton6",
+                        "text": "แก้ไขข้อมูล"
+                    },
+                    "designerId": "f5c093d8-1fd8-4c24-9f4b-7c2c555914e6"
+                }
+            ]
+        }
+    ]
+}

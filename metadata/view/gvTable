@@ -1,0 +1,291 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": null,
+        "width": null,
+        "designer|userClassName": "gvTable",
+        "designer|userAlias": "mygridpanel",
+        "title": null,
+        "store": "cultData"
+    },
+    "designerId": "1ca95de5-fd58-4f7a-ac1a-f7c26ed9ceb7",
+    "cn": [
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView"
+            },
+            "designerId": "a5cf0fcc-4317-42e3-bf27-7d940f110c31"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": null,
+                "designer|userClassName": "MyColumn4",
+                "designer|displayName": "id",
+                "dataIndex": "id",
+                "text": "Id"
+            },
+            "designerId": "f31cac58-0424-4270-8771-9d21750f8500"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": null,
+                "designer|userClassName": "MyColumn5",
+                "designer|displayName": "date",
+                "dataIndex": "date",
+                "text": "Date"
+            },
+            "designerId": "bfcf223e-3d84-4172-9b53-7a0e164f2ef3"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn6",
+                "designer|displayName": "time",
+                "dataIndex": "time",
+                "text": "Time"
+            },
+            "designerId": "3d9e2acb-614c-4c96-a73b-ff1b6971bac0"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn7",
+                "designer|displayName": "depNo",
+                "dataIndex": "depNo",
+                "text": "DepNo"
+            },
+            "designerId": "6f4405ae-3f00-4757-aaa7-78e1d3491611"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn8",
+                "designer|displayName": "withDrawal",
+                "dataIndex": "withDrawal",
+                "text": "WithDrawal"
+            },
+            "designerId": "5451a7b2-2a8d-40d8-8f28-79dc7314a0ff"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn9",
+                "designer|displayName": "deposit",
+                "dataIndex": "deposit",
+                "text": "Deposit"
+            },
+            "designerId": "cc6d545f-edcf-4c40-87dd-5132d20740c5"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn10",
+                "designer|displayName": "machNo",
+                "dataIndex": "machNo",
+                "text": "MachNo"
+            },
+            "designerId": "4dd8e09b-aa88-4cc4-86f1-725bf5c8ffa9"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn11",
+                "designer|displayName": "memberId",
+                "dataIndex": "memberId",
+                "text": "MemberId"
+            },
+            "designerId": "dfd8ce9a-e09a-4113-b0bd-38d7f616bde6"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn12",
+                "designer|displayName": "transactionNo",
+                "dataIndex": "transactiionNo",
+                "text": "TransactiionNo"
+            },
+            "designerId": "90c0524f-cca4-44b4-9568-da047f68befd"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn13",
+                "designer|displayName": "name",
+                "dataIndex": "name",
+                "text": "Name"
+            },
+            "designerId": "7fd79dd4-951b-4177-953f-42fdee851bca"
+        },
+        {
+            "type": "Ext.grid.column.Action",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyActionColumn",
+                "designer|displayName": "Edit",
+                "sortable": true,
+                "menuText": null,
+                "altText": ""
+            },
+            "designerId": "bfe834fb-4211-4a74-b630-962fa8bc644c",
+            "cn": [
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem1",
+                        "designer|displayName": "edit",
+                        "icon": "http://b.dryicons.com/images/icon_sets/luna_blue_icons/png/128x128/edit.png",
+                        "tooltip": "edit"
+                    },
+                    "designerId": "4dd87a05-0326-4367-8330-29c16328cac4",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "view",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "item",
+                                    "e",
+                                    "record",
+                                    "row"
+                                ],
+                                "implHandler": [
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "var rec = view.getRecords(view.getNodes())[rowIndex];\r",
+                                    "\r",
+                                    "this.fireEvent('itemclick', this, 'addd', view, rowIndex, colIndex, item, e,record,row);"
+                                ]
+                            },
+                            "designerId": "afa8d227-e40b-423f-8ca7-3a5774d145ef"
+                        }
+                    ]
+                },
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyActionColumnItem",
+                        "designer|displayName": "delete",
+                        "icon": "http://a.dryicons.com/images/icon_sets/luna_blue_icons/png/128x128/delete.png",
+                        "tooltip": "detete"
+                    },
+                    "designerId": "02d3520e-898f-4cce-9402-89aa52758123",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "view",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "item",
+                                    "e",
+                                    "record",
+                                    "row"
+                                ],
+                                "implHandler": [
+                                    "\r",
+                                    "this.fireEvent('itemclick', this, 'dle', view, rowIndex, colIndex, item, e,record,row);"
+                                ]
+                            },
+                            "designerId": "97a50d96-5b36-44f7-825b-1304b63e7f3d"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,320 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "designerId": "5206848e-bfe9-4732-bde7-aa654445b989",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "clickAddmoney",
+                "fn": "clickAddmoney",
+                "implHandler": [
+                    "//console.log('ooooooooooo');\r",
+                    "this.loadAdd();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#btnAdd"
+            },
+            "designerId": "2a5a7c59-db98-45c2-9e00-7417c4c28869"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "clickAddButton",
+                "fn": "clickAddButton",
+                "implHandler": [
+                    "console.log(Ext.getCmp('pnAddListMoney').getForm().isValid());\r",
+                    "if(Ext.getCmp('pnAddListMoney').getForm().isValid())\r",
+                    "{\r",
+                    "\r",
+                    "    Ext.getStore('cultData').add(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
+                    "    Ext.getCmp('pnAddListMoney').getForm().reset;\r",
+                    "    this.getPnAddListMoneyWindows().destroy();\r",
+                    "\r",
+                    "}\r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#btnSave"
+            },
+            "designerId": "2cc4e329-4540-4438-a1e6-5e2c41c3961e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "clickSubmitEdit",
+                "fn": "clickSubmitEdit",
+                "implHandler": [
+                    "\r",
+                    "rec.set(Ext.getCmp('pnAddListMoney').getForm().getValues());\r",
+                    "this.getPnAddListMoneyWindows().destroy();\r",
+                    "\r",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#btnEdit"
+            },
+            "designerId": "64f44e7f-35a7-493e-9383-28afc8453399"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "clickNo",
+                "fn": "clickNo",
+                "implHandler": [
+                    "this.getWdForm().destroy();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#btnNo"
+            },
+            "designerId": "a47954e5-64db-4636-9ea2-26c9cdaf4fc1"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "clickClear",
+                "fn": "clickClear",
+                "implHandler": [
+                    "Ext.getCmp('pnAddListMoney').getForm().reset();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#btnClear"
+            },
+            "designerId": "103fd339-efe9-4c88-91b3-e5c93531738a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "clickEdit",
+                "fn": "clickEdit",
+                "designer|params": [
+                    "column,action,view, rowIndex, colIndex, item, e,record,row"
+                ],
+                "implHandler": [
+                    "//console.log('jjjjjjj');\r",
+                    "\r",
+                    "\r",
+                    "rec = record;\r",
+                    "var wnDel = Ext.create('MyApp.view.wnDelete');\r",
+                    "indexRow = rowIndex;\r",
+                    "\r",
+                    "\r",
+                    "var getloadEdit = Ext.getStore('cultData').data.items[rowIndex];\r",
+                    "\r",
+                    "var store =  Ext.getStore('cultData');\r",
+                    "\r",
+                    "if (action == 'dle'){\r",
+                    "    wnDel.show();\r",
+                    "    //store.removeAt(rowIndex);\r",
+                    "}\r",
+                    "else{\r",
+                    "\r",
+                    "    this.loadEdit(getloadEdit,rowIndex);\r",
+                    "    \r",
+                    "\r",
+                    "}\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    ""
+                ],
+                "name": "itemclick",
+                "scope": "me",
+                "designer|controlQuery": "mygridpanel actioncolumn"
+            },
+            "designerId": "d0ae6b77-4e4a-49fa-ab46-cd9446d83c9b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "pnAddListMoneyWindows",
+                "ref": "pnAddListMoneyWindows",
+                "selector": "pnAddListMoneyWindows"
+            },
+            "designerId": "ba390b09-3745-4405-91c5-98f9cb57f0ba"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "wdForm",
+                "ref": "wdForm",
+                "selector": "wnDelete"
+            },
+            "designerId": "a6be8aad-e657-4fde-a608-4fc23154abdd"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "loadAdd",
+                "fn": "loadAdd",
+                "implHandler": [
+                    "\r",
+                    "var pnWindow = Ext.getCmp('pnAddListMoneyWindows');\r",
+                    "\r",
+                    "if(!pnWindow){\r",
+                    "    pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows');\r",
+                    "    Ext.getCmp('btnEdit').hidden = true;\r",
+                    "\r",
+                    "}\r",
+                    "\r",
+                    "pnWindow.show();\r",
+                    "\r",
+                    ""
+                ]
+            },
+            "designerId": "ecbe3c10-037e-4c0a-a9ec-a9246aa5cbd4"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "loadEdit",
+                "fn": "loadEdit",
+                "designer|params": [
+                    "loadInfo",
+                    "rowIndex"
+                ],
+                "implHandler": [
+                    "\r",
+                    "var pnWindow = Ext.create('MyApp.view.pnAddListMoneyWindows',{\r",
+                    "    title:\"แก้ไขข้อมูลรับเงิน\"\r",
+                    "\r",
+                    "});\r",
+                    "\r",
+                    "Ext.getCmp('btnSave').hidden = true;\r",
+                    "pnWindow.show();\r",
+                    "\r",
+                    "\r",
+                    "/*\r",
+                    "for (prop in loadInfo.data){\r",
+                    "console.log(prop);\r",
+                    "//console.log(loadInfo.data[prop]);\r",
+                    "//console.log(Ext.getCmp(prop));\r",
+                    "//  Ext.getCmp[prop].setValue(loadInfo.data[prop]);\r",
+                    "\r",
+                    "Ext.getCmp(prop).setValue(loadInfo.data[prop]);\r",
+                    "}\r",
+                    "*/\r",
+                    "\r",
+                    "var rstore=Ext.getStore('cultData').getAt(rowIndex);\r",
+                    "Ext.getCmp('pnAddListMoney').getForm().loadRecord(rstore);\r",
+                    "\r",
+                    "//this.getPnAddListMoneyWindows().destroy();"
+                ]
+            },
+            "designerId": "3d792f3f-e5a7-4a5c-a252-6afdd57caa57"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "clickYes",
+                "fn": "clickYes",
+                "implHandler": [
+                    "//console.log(button,e,eOpts);\r",
+                    "this.rowDelete(indexRow);\r",
+                    "\r",
+                    "this.getWdForm().destroy();"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#btnYes"
+            },
+            "designerId": "651c0ce7-7188-4fd2-842a-a9b0f790b928"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "rowDelete",
+                "fn": "rowDelete",
+                "designer|params": [
+                    "rowinfo"
+                ],
+                "implHandler": [
+                    "var store = Ext.getStore('cultData');\r",
+                    "\r",
+                    "store.removeAt(rowinfo);"
+                ]
+            },
+            "designerId": "26a4368d-8d8c-4b41-af50-4009af34f32a"
+        }
+    ]
+}

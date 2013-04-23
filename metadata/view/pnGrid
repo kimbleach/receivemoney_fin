@@ -1,0 +1,32 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": null,
+        "width": null,
+        "designer|userClassName": "pnGrid",
+        "designer|userAlias": "mypanel11",
+        "title": "รายการข้อมูล"
+    },
+    "designerId": "7391f0dd-8b84-41cc-82c3-ef9fdb3b83cf",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": null,
+                "width": null
+            },
+            "designerId": "abab8d05-c20f-40c5-9df4-d11fdf01f80c",
+            "masterInstanceId": "1ca95de5-fd58-4f7a-ac1a-f7c26ed9ceb7"
+        }
+    ]
+}
